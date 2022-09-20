@@ -155,7 +155,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await fallen.edit(
-                "» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴀʀᴄʜ ʙᴀʙʏ🤦🏻‍♂️"
+                "» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴀʀᴄʜ ʙᴀʙʏ🤦🏻‍♂️ ex /play add me "
             )
         await fallen.edit("🔎")
         query = message.text.split(None, 1)[1]
@@ -204,7 +204,7 @@ async def play(_, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• add💫me •", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("• UPDATE •", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton("» ᴄʟᴏsᴇ «", callback_data="close_play")
                 ],
             ]
@@ -227,7 +227,7 @@ async def play(_, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• Add💫me •", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("• UPDATE •", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton("» ᴄʟᴏsᴇ «", callback_data="close_play")
                 ],
             ]
